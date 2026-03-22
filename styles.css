@@ -359,6 +359,11 @@ main {
   gap: 0.65rem;
 }
 
+/* Keep Next / See results directly under choices so long explanations don’t hide them. */
+#view-quiz .quiz-actions {
+  margin-top: 1.25rem;
+}
+
 .choice {
   text-align: left;
   padding: 0.85rem 1rem;

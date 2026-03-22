@@ -344,7 +344,14 @@
 
     $("#feedback-text").textContent = q.explain;
     $("#feedback-block").removeAttribute("hidden");
-    $("#btn-next").removeAttribute("hidden");
+
+    const isLast = state.index === state.questions.length - 1;
+    const nextBtn = $("#btn-next");
+    nextBtn.textContent = isLast ? "See results" : "Next question";
+    nextBtn.removeAttribute("hidden");
+    requestAnimationFrame(() => {
+      nextBtn.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    });
   }
 
   function nextQuestion() {

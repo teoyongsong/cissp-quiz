@@ -50,7 +50,7 @@ def main() -> None:
     )
     html = build_embedded_index_html()
     # Tall iframe; quiz scrolls inside. Increase if needed on large displays.
-    components.html(html, height=1100, scrolling=True)
+    components.html(html, height=1200, scrolling=True)
 
 
 if __name__ == "__main__":
