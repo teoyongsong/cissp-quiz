@@ -1,0 +1,898 @@
+{
+  "d1": [
+    {
+      "q": "Which activity most directly supports aligning security with business objectives?",
+      "choices": [
+        "Establishing a security governance framework with defined roles",
+        "Deploying endpoint antivirus on all workstations",
+        "Increasing password complexity to 20 characters",
+        "Disabling USB ports on all laptops"
+      ],
+      "correct": 0,
+      "explain": "Governance ties security decisions to organizational goals, accountability, and risk appetite. The other options are controls without strategic alignment."
+    },
+    {
+      "q": "The annual loss expectancy (ALE) is calculated as:",
+      "choices": [
+        "Single loss expectancy (SLE) × annualized rate of occurrence (ARO)",
+        "Asset value × exposure factor (EF)",
+        "Threat × vulnerability × impact",
+        "Residual risk × inherent risk"
+      ],
+      "correct": 0,
+      "explain": "ALE = SLE × ARO. SLE is EF × asset value; ARO is how often the loss is expected per year."
+    },
+    {
+      "q": "A qualitative risk analysis is best characterized by:",
+      "choices": [
+        "Using categories such as high/medium/low based on expert judgment",
+        "Computing exact dollar amounts for each risk scenario",
+        "Requiring Monte Carlo simulation for all assets",
+        "Eliminating the need for a risk register"
+      ],
+      "correct": 0,
+      "explain": "Qualitative analysis uses scales and categories. Quantitative analysis uses monetary values and often more math."
+    },
+    {
+      "q": "Which document typically states management’s intent and high-level security requirements?",
+      "choices": [
+        "Security policy",
+        "Procedure",
+        "Baseline configuration",
+        "Runbook"
+      ],
+      "correct": 0,
+      "explain": "Policies are high-level, management-approved statements of intent. Procedures are step-by-step; baselines and runbooks are operational."
+    },
+    {
+      "q": "Business impact analysis (BIA) primarily helps determine:",
+      "choices": [
+        "Critical processes, dependencies, and recovery priorities",
+        "Which firewall rules to deploy next quarter",
+        "The exact cryptographic algorithm for data at rest",
+        "Developer headcount for the next sprint"
+      ],
+      "correct": 0,
+      "explain": "A BIA identifies critical business functions, impacts of disruption, and RTO/RPO inputs for continuity planning."
+    },
+    {
+      "q": "Due care in security management generally means:",
+      "choices": [
+        "Taking reasonable steps that a prudent person would take to protect assets",
+        "Guaranteeing that no breaches will ever occur",
+        "Delegating all security decisions to vendors",
+        "Only following practices required by criminal law"
+      ],
+      "correct": 0,
+      "explain": "Due care is reasonable, responsible action. Due diligence often refers to investigation/verification; both relate to legal and governance contexts."
+    },
+    {
+      "q": "Residual risk is:",
+      "choices": [
+        "Risk remaining after controls have been applied",
+        "Risk before any controls are implemented",
+        "Risk transferred entirely to insurance",
+        "Risk that only affects cloud environments"
+      ],
+      "correct": 0,
+      "explain": "Inherent risk is before controls; residual risk is what remains after treatment (accept, mitigate, transfer, avoid)."
+    },
+    {
+      "q": "Separation of duties is implemented primarily to:",
+      "choices": [
+        "Reduce fraud and errors by splitting conflicting responsibilities",
+        "Increase password rotation frequency",
+        "Ensure single sign-on across all applications",
+        "Guarantee faster incident response"
+      ],
+      "correct": 0,
+      "explain": "SoD ensures no single person can complete a sensitive transaction alone (e.g., request + approve)."
+    },
+    {
+      "q": "Which is the most accurate statement about security awareness training?",
+      "choices": [
+        "It should be ongoing and tailored to roles, not a one-time event",
+        "It replaces the need for technical controls",
+        "It is only required for IT staff",
+        "It eliminates phishing as a threat"
+      ],
+      "correct": 0,
+      "explain": "Awareness is continuous and role-based; it complements controls and reduces but does not remove human-related risk."
+    },
+    {
+      "q": "A key goal of third-party risk management is to:",
+      "choices": [
+        "Understand and manage risks introduced by vendors and partners",
+        "Eliminate all use of external service providers",
+        "Standardize all vendors on one operating system",
+        "Replace internal audits with vendor self-attestation only"
+      ],
+      "correct": 0,
+      "explain": "Supply chain and vendor risk require contracts, assessments, and monitoring proportional to the services and data involved."
+    }
+  ],
+  "d2": [
+    {
+      "q": "Data classification schemes are primarily used to:",
+      "choices": [
+        "Drive consistent handling, labeling, and protection requirements",
+        "Replace the need for encryption",
+        "Determine employee salaries",
+        "Guarantee data is stored only on tape"
+      ],
+      "correct": 0,
+      "explain": "Classification links sensitivity to controls (access, storage, transmission). It does not remove other safeguards."
+    },
+    {
+      "q": "Which is the best example of data at rest?",
+      "choices": [
+        "Database files stored on encrypted server disks",
+        "HTTPS traffic between a user and a website",
+        "VoIP packets crossing the LAN",
+        "Memory contents during program execution"
+      ],
+      "correct": 0,
+      "explain": "Data at rest is stored on media. In transit is moving across networks; in use is active in memory/CPU."
+    },
+    {
+      "q": "Media sanitization before disposal should be based on:",
+      "choices": [
+        "Sensitivity of data and organizational policy; may require destruction, not only deletion",
+        "Whether the drive is SSD or HDD only",
+        "The color of the asset tag",
+        "Random selection of drives each quarter"
+      ],
+      "correct": 0,
+      "explain": "NIST SP 800-88 style guidance: clear/purge/destroy based on confidentiality needs and media type."
+    },
+    {
+      "q": "Privacy impact assessments (PIA/DPIA) help organizations:",
+      "choices": [
+        "Identify privacy risks before processing personal data",
+        "Replace legal counsel for GDPR",
+        "Guarantee zero personal data breaches",
+        "Avoid all logging of user activity"
+      ],
+      "correct": 0,
+      "explain": "PIAs/DPIAs analyze processing, necessity, and mitigations for privacy—often required by regulation for high-risk processing."
+    },
+    {
+      "q": "Asset inventory is foundational because:",
+      "choices": [
+        "You cannot protect or manage what you do not know you have",
+        "It automatically patches all systems",
+        "It eliminates the need for change management",
+        "It is only relevant for physical laptops"
+      ],
+      "correct": 0,
+      "explain": "CMDB/inventory supports risk, patching, licensing, and incident scope."
+    },
+    {
+      "q": "Retention schedules primarily address:",
+      "choices": [
+        "How long data is kept and when it is destroyed per policy/law",
+        "How often users change passwords",
+        "Network bandwidth allocation",
+        "Firewall rule expiration"
+      ],
+      "correct": 0,
+      "explain": "Retention limits storage liability and supports legal holds; disposal must be controlled."
+    },
+    {
+      "q": "Labeling a document “Confidential” is an example of:",
+      "choices": [
+        "Data handling requirement tied to classification",
+        "Encryption in transit",
+        "Multifactor authentication",
+        "Network segmentation"
+      ],
+      "correct": 0,
+      "explain": "Labels communicate required handling; technical controls enforce them."
+    },
+    {
+      "q": "Data remanence refers to:",
+      "choices": [
+        "Residual data that may remain on storage after deletion or reformat",
+        "Data replicated to a hot site",
+        "Encrypted backups in the cloud",
+        "Temporary files cleared at logout only"
+      ],
+      "correct": 0,
+      "explain": "Remanence drives secure wipe, crypto erase, or physical destruction for sensitive media."
+    },
+    {
+      "q": "Which practice best supports data loss prevention (DLP) goals?",
+      "choices": [
+        "Combining discovery, policy, and technical controls for sensitive data movement",
+        "Blocking all outbound email",
+        "Disabling all USB ports without exception",
+        "Storing all data in plaintext for searchability"
+      ],
+      "correct": 0,
+      "explain": "DLP is layered: classify/discover data, define policy, enforce on endpoint, network, and cloud channels proportionally."
+    },
+    {
+      "q": "When sharing data with a partner, a data sharing agreement should clarify:",
+      "choices": [
+        "Purpose, scope, security controls, and permitted use",
+        "Only the partner’s office address",
+        "Internal employee performance ratings",
+        "The partner’s stock price"
+      ],
+      "correct": 0,
+      "explain": "Contracts and DSAs define responsibilities, subprocessors, breach notification, and return/destruction of data."
+    }
+  ],
+  "d3": [
+    {
+      "q": "The Bell–LaPadula model focuses on:",
+      "choices": [
+        "Confidentiality (no read up, no write down in simple terms)",
+        "Integrity of financial transactions primarily",
+        "Availability of web services",
+        "Physical perimeter detection"
+      ],
+      "correct": 0,
+      "explain": "Bell–LaPadula enforces mandatory access for confidentiality. Biba addresses integrity."
+    },
+    {
+      "q": "Symmetric encryption uses:",
+      "choices": [
+        "The same secret key for encryption and decryption",
+        "A public key to encrypt and a different public key to decrypt",
+        "Only hashing, not encryption",
+        "Key pairs where both keys are published"
+      ],
+      "correct": 0,
+      "explain": "AES is symmetric. Asymmetric (RSA, ECC) uses public/private key pairs."
+    },
+    {
+      "q": "Which statement about hashing is most accurate?",
+      "choices": [
+        "A cryptographic hash produces a fixed-size digest; it is one-way for typical use",
+        "Hashing is reversible if you have the salt",
+        "MD5 is recommended for new password storage",
+        "Hashes provide confidentiality for stored data"
+      ],
+      "correct": 0,
+      "explain": "Hashes are for integrity/verification; passwords need slow KDFs (bcrypt, Argon2). MD5 is deprecated for security uses."
+    },
+    {
+      "q": "Defense in depth means:",
+      "choices": [
+        "Layering multiple independent controls so failure of one does not defeat security",
+        "Using only one strong perimeter firewall",
+        "Relying exclusively on encryption",
+        "Removing monitoring to reduce complexity"
+      ],
+      "correct": 0,
+      "explain": "Layered controls (technical, administrative, physical) improve resilience."
+    },
+    {
+      "q": "A trusted platform module (TPM) is often used to:",
+      "choices": [
+        "Store keys and perform crypto operations in hardware-rooted trust",
+        "Replace network firewalls",
+        "Guarantee application code has no bugs",
+        "Provide unlimited cloud storage"
+      ],
+      "correct": 0,
+      "explain": "TPMs support secure boot, BitLocker keys, measured boot, and attestation scenarios."
+    },
+    {
+      "q": "Which is an example of assurance in secure engineering?",
+      "choices": [
+        "Testing, evaluation, and certification against defined criteria (e.g., Common Criteria)",
+        "Using longer Wi‑Fi passwords only",
+        "Increasing marketing spend",
+        "Disabling audit logs for performance"
+      ],
+      "correct": 0,
+      "explain": "Assurance demonstrates that a product meets security claims—design review, testing, formal evaluation."
+    },
+    {
+      "q": "Salting passwords before hashing primarily helps:",
+      "choices": [
+        "Defend against rainbow table attacks and separate identical passwords",
+        "Encrypt the password for transmission",
+        "Comply with symmetric key exchange",
+        "Guarantee passwords are stored in plaintext"
+      ],
+      "correct": 0,
+      "explain": "Unique salts per user increase cracking cost; modern systems use adaptive KDFs with salt and sometimes pepper."
+    },
+    {
+      "q": "Secure defaults in system design mean:",
+      "choices": [
+        "The system is safe out of the box; features that increase risk are off until needed",
+        "All users are administrators by default",
+        "All ports are open until configured",
+        "Passwords are blank for first login"
+      ],
+      "correct": 0,
+      "explain": "Principle of secure defaults: minimize attack surface; enable features explicitly."
+    },
+    {
+      "q": "Which pair correctly contrasts stream vs. block ciphers?",
+      "choices": [
+        "Stream ciphers encrypt continuous data (often bit/byte at a time); block ciphers encrypt fixed-size blocks",
+        "Stream ciphers only work on databases; block ciphers only on email",
+        "They are identical terms",
+        "Block ciphers cannot use keys"
+      ],
+      "correct": 0,
+      "explain": "Examples: AES is block (modes like GCM); RC4 is a stream cipher (deprecated for TLS)."
+    },
+    {
+      "q": "The Biba integrity model’s informal rule “no read down” helps prevent:",
+      "choices": [
+        "Lower-integrity subjects from contaminating higher-integrity objects via reads",
+        "Encryption key escrow",
+        "DNS amplification",
+        "TLS certificate pinning"
+      ],
+      "correct": 0,
+      "explain": "Biba protects integrity (stars integrity rules). Contrast with Bell–LaPadula for confidentiality."
+    }
+  ],
+  "d4": [
+    {
+      "q": "A screened subnet (DMZ) is used to:",
+      "choices": [
+        "Host public-facing services between internal and external networks with controlled access",
+        "Store backup tapes only",
+        "Replace the need for authentication",
+        "Guarantee end-to-end encryption for all internal traffic"
+      ],
+      "correct": 0,
+      "explain": "DMZ segments expose limited services while protecting the internal LAN via firewalls and ACLs."
+    },
+    {
+      "q": "TLS is most closely associated with:",
+      "choices": [
+        "Protecting data in transit between client and server",
+        "Encrypting data at rest on HDDs by default",
+        "Replacing firewalls",
+        "Physical door locks"
+      ],
+      "correct": 0,
+      "explain": "TLS provides channel confidentiality and integrity on networks (often with certificates)."
+    },
+    {
+      "q": "Network segmentation primarily helps:",
+      "choices": [
+        "Limit lateral movement and blast radius after compromise",
+        "Remove the need for patch management",
+        "Guarantee identical passwords on all segments",
+        "Eliminate logging"
+      ],
+      "correct": 0,
+      "explain": "VLANs, firewalls, and micro-segmentation restrict east-west traffic."
+    },
+    {
+      "q": "Which protocol is connectionless at Layer 4?",
+      "choices": [
+        "UDP",
+        "TCP",
+        "HTTP",
+        "TLS"
+      ],
+      "correct": 0,
+      "explain": "UDP is connectionless; TCP is connection-oriented. HTTP/TLS run above the transport layer."
+    },
+    {
+      "q": "A SYN flood attack targets:",
+      "choices": [
+        "TCP connection setup by exhausting half-open connection resources",
+        "DNSSEC key rotation",
+        "SSD wear leveling",
+        "BIOS passwords"
+      ],
+      "correct": 0,
+      "explain": "SYN floods abuse the three-way handshake; mitigations include SYN cookies, rate limiting, and filtering."
+    },
+    {
+      "q": "IPsec in tunnel mode typically:",
+      "choices": [
+        "Encapsulates entire IP packets for gateway-to-gateway VPNs",
+        "Only encrypts HTTP headers",
+        "Works only on Layer 2 switches without IP",
+        "Replaces the need for routing tables"
+      ],
+      "correct": 0,
+      "explain": "IPsec AH/ESP; tunnel mode wraps the original IP packet—common for site-to-site VPNs."
+    },
+    {
+      "q": "802.1X is used for:",
+      "choices": [
+        "Port-based network access control (authenticate before network admission)",
+        "Wi‑Fi frequency selection only",
+        "Email encryption (S/MIME)",
+        "Database transaction isolation"
+      ],
+      "correct": 0,
+      "explain": "802.1X with EAP ties network access to identity (often via RADIUS)."
+    },
+    {
+      "q": "DNSSEC provides:",
+      "choices": [
+        "Integrity and authenticity for DNS data, not confidentiality of queries by itself",
+        "Encryption of all DNS queries by default",
+        "Replacement for TLS",
+        "Blocking of all DDoS attacks"
+      ],
+      "correct": 0,
+      "explain": "DNSSEC signs records to prevent tampering; privacy may need DoH/DoT separately."
+    },
+    {
+      "q": "A reverse proxy is often placed:",
+      "choices": [
+        "In front of internal web servers to terminate TLS, cache, and filter requests",
+        "On each user laptop only",
+        "Between two databases exclusively",
+        "Inside a smart card only"
+      ],
+      "correct": 0,
+      "explain": "Reverse proxies protect origin servers; forward proxies represent clients outbound."
+    },
+    {
+      "q": "SDN (Software-Defined Networking) separates:",
+      "choices": [
+        "Control plane from data plane for centralized policy and programmability",
+        "TCP from UDP at the application layer",
+        "Symmetric from asymmetric encryption in databases",
+        "Physical locks from badge readers"
+      ],
+      "correct": 0,
+      "explain": "Controllers manage forwarding rules; data plane devices forward traffic."
+    }
+  ],
+  "d5": [
+    {
+      "q": "Multifactor authentication requires at least two factors from:",
+      "choices": [
+        "Something you know, have, or are (different categories)",
+        "Two passwords only",
+        "Two usernames",
+        "The same factor twice"
+      ],
+      "correct": 0,
+      "explain": "MFA combines categories (knowledge, possession, inherence). Two passwords are still one factor."
+    },
+    {
+      "q": "RBAC assigns permissions based on:",
+      "choices": [
+        "Job role rather than individual identity alone",
+        "GPS location only",
+        "Packet size in transit",
+        "CPU clock speed"
+      ],
+      "correct": 0,
+      "explain": "Roles aggregate permissions; users are assigned roles (often with constraints)."
+    },
+    {
+      "q": "SAML is commonly used for:",
+      "choices": [
+        "Web-based single sign-on and exchanging identity assertions between parties",
+        "Disk encryption",
+        "Wi‑Fi WPA3 passphrase generation",
+        "Firmware updates for printers"
+      ],
+      "correct": 0,
+      "explain": "SAML is XML-based federation for SSO. OAuth/OIDC are common for API delegated auth."
+    },
+    {
+      "q": "Which is an example of something you are?",
+      "choices": [
+        "Fingerprint",
+        "Password",
+        "Smart card",
+        "OTP app"
+      ],
+      "correct": 0,
+      "explain": "Biometrics are inherence factors. Password = knowledge; token/app = possession."
+    },
+    {
+      "q": "Least privilege means:",
+      "choices": [
+        "Users/processes get only the minimum access needed to perform their function",
+        "Everyone gets admin for efficiency",
+        "Guests have the same rights as root",
+        "Permissions are granted permanently without review"
+      ],
+      "correct": 0,
+      "explain": "Least privilege and need-to-know limit exposure; periodic review is important."
+    },
+    {
+      "q": "Kerberos primarily relies on:",
+      "choices": [
+        "Tickets issued by a trusted Key Distribution Center (KDC)",
+        "Self-signed certificates only",
+        "Plaintext passwords in LDAP",
+        "BGP route advertisements"
+      ],
+      "correct": 0,
+      "explain": "Kerberos uses TGTs and service tickets in Windows AD environments."
+    },
+    {
+      "q": "OAuth 2.0 is fundamentally about:",
+      "choices": [
+        "Delegated authorization (access to resources without sharing the user’s password with third parties)",
+        "Encrypting data at rest",
+        "Replacing firewalls",
+        "Physical access control"
+      ],
+      "correct": 0,
+      "explain": "OAuth is authorization; OpenID Connect builds identity on OAuth 2.0."
+    },
+    {
+      "q": "Accountability in IAM is best supported by:",
+      "choices": [
+        "Unique IDs, authentication, and audit trails tying actions to subjects",
+        "Shared generic accounts for convenience",
+        "Disabling all logging",
+        "One password for the whole team"
+      ],
+      "correct": 0,
+      "explain": "Non-repudiation and accountability require attributable identities and reliable logs."
+    },
+    {
+      "q": "ABAC differs from RBAC primarily by:",
+      "choices": [
+        "Using attributes and policies (user, resource, environment) for fine-grained decisions",
+        "Removing the need for any policy engine",
+        "Using only MAC addresses",
+        "Guaranteeing fixed permissions forever"
+      ],
+      "correct": 0,
+      "explain": "ABAC (XACML-style) evaluates many attributes; RBAC is role-centric."
+    },
+    {
+      "q": "Session fixation can be mitigated by:",
+      "choices": [
+        "Regenerating session IDs after authentication and using secure cookie flags",
+        "Using longer session timeouts only",
+        "Disabling HTTPS",
+        "Publishing session IDs in URLs only"
+      ],
+      "correct": 0,
+      "explain": "Bind sessions to the authenticated user; invalidate pre-auth session identifiers; HttpOnly/Secure/SameSite cookies help."
+    }
+  ],
+  "d6": [
+    {
+      "q": "A vulnerability assessment differs from a penetration test in that it:",
+      "choices": [
+        "Typically emphasizes breadth of findings and validation level varies; pen tests simulate real attacks to specific goals",
+        "Never uses scanning tools",
+        "Is always identical to a red team engagement",
+        "Only applies to web applications"
+      ],
+      "correct": 0,
+      "explain": "VA finds/configures issues broadly; pen testing exercises exploit paths toward objectives with rules of engagement."
+    },
+    {
+      "q": "Which testing gives the most insider knowledge to testers?",
+      "choices": [
+        "White box (full knowledge)",
+        "Black box (no internal details)",
+        "Gray box (partial knowledge)",
+        "Blind box only for social engineering"
+      ],
+      "correct": 0,
+      "explain": "White box includes architecture/docs/source; black box mimics external attacker knowledge."
+    },
+    {
+      "q": "Security regression testing ensures:",
+      "choices": [
+        "That fixes and changes do not reintroduce old vulnerabilities",
+        "That marketing copy is accurate",
+        "That HR policies are updated",
+        "That firewalls are physically installed"
+      ],
+      "correct": 0,
+      "explain": "Automated and manual regression checks catch broken fixes in CI/CD."
+    },
+    {
+      "q": "CVSS scores primarily communicate:",
+      "choices": [
+        "Severity of software vulnerabilities in a standardized way",
+        "Company stock ratings",
+        "Employee performance",
+        "Network latency"
+      ],
+      "correct": 0,
+      "explain": "CVSS helps prioritize patching; combine with exploitability and asset context."
+    },
+    {
+      "q": "Static application security testing (SAST) analyzes:",
+      "choices": [
+        "Source or bytecode without executing the program",
+        "Running applications in production only",
+        "Firewall throughput",
+        "Physical data center temperature"
+      ],
+      "correct": 0,
+      "explain": "SAST finds issues early in SDLC; DAST is dynamic/runtime; IAST combines approaches."
+    },
+    {
+      "q": "An internal audit’s independence is important because:",
+      "choices": [
+        "Objectivity reduces bias in assessing controls",
+        "Auditors should implement the fixes they find",
+        "Auditors should report only to the project manager",
+        "Audits replace security monitoring"
+      ],
+      "correct": 0,
+      "explain": "Independence (organizational and mental) strengthens assurance; separation from operations is key."
+    },
+    {
+      "q": "Bug bounty programs:",
+      "choices": [
+        "Incentivize external researchers to report vulnerabilities responsibly",
+        "Replace secure development practices",
+        "Guarantee no vulnerabilities exist",
+        "Are illegal in all jurisdictions"
+      ],
+      "correct": 0,
+      "explain": "Bounties complement SDL; scope and safe harbor rules matter."
+    },
+    {
+      "q": "Which is a common output of a network vulnerability scan?",
+      "choices": [
+        "List of potentially vulnerable services and missing patches",
+        "Guaranteed exploit success",
+        "Legal contracts with customers",
+        "Employee salaries"
+      ],
+      "correct": 0,
+      "explain": "Scanners identify candidates; validation reduces false positives before action."
+    },
+    {
+      "q": "Social engineering testing should:",
+      "choices": [
+        "Be authorized, scoped, and ethical with clear rules of engagement",
+        "Be performed without management approval if small",
+        "Always use real customer data",
+        "Focus only on technical exploits"
+      ],
+      "correct": 0,
+      "explain": "Phishing simulations require policy, notice considerations, and privacy safeguards."
+    },
+    {
+      "q": "Continuous monitoring in assessment context means:",
+      "choices": [
+        "Ongoing visibility into vulnerabilities, configurations, and exceptions—not annual-only snapshots",
+        "Disabling scanners for performance",
+        "Only manual review once per decade",
+        "Ignoring cloud assets"
+      ],
+      "correct": 0,
+      "explain": "GRC and VM programs trend toward continuous assessment with ticketing and SLAs."
+    }
+  ],
+  "d7": [
+    {
+      "q": "The first priority in handling a suspected active intrusion is often:",
+      "choices": [
+        "Containment to limit damage while preserving evidence as appropriate",
+        "Immediately deleting all logs to save space",
+        "Announcing details publicly before verification",
+        "Restoring from untested backups without analysis"
+      ],
+      "correct": 0,
+      "explain": "IR phases: prepare, detect, contain, eradicate, recover, lessons learned. Evidence and legal hold matter."
+    },
+    {
+      "q": "SIEM primarily helps with:",
+      "choices": [
+        "Aggregating, correlating, and alerting on security-relevant events",
+        "Replacing firewalls",
+        "Writing application code",
+        "Physical key management for offices"
+      ],
+      "correct": 0,
+      "explain": "SIEM centralizes logs and use cases; still needs tuning and skilled analysts."
+    },
+    {
+      "q": "Immutable backups help against:",
+      "choices": [
+        "Ransomware that tries to encrypt or delete backup data",
+        "Slow DNS responses",
+        "Weak Wi‑Fi signal",
+        "Expired TLS certificates on clients"
+      ],
+      "correct": 0,
+      "explain": "WORM/immutability, offline copies, and 3-2-1 strategy improve resilience."
+    },
+    {
+      "q": "Jump servers (bastion hosts) are used to:",
+      "choices": [
+        "Administer sensitive systems through a controlled, hardened intermediary",
+        "Browse social media",
+        "Store user photos",
+        "Replace MFA"
+      ],
+      "correct": 0,
+      "explain": "Bastions reduce direct exposure; session recording and PAM integrate here."
+    },
+    {
+      "q": "MTD (maximum tolerable downtime) relates to:",
+      "choices": [
+        "The longest outage a business can endure without unacceptable harm",
+        "Network MTU size",
+        "Mean time between password changes",
+        "Minimum TLS version"
+      ],
+      "correct": 0,
+      "explain": "BCP metrics include RTO/RPO; MTD caps acceptable outage duration."
+    },
+    {
+      "q": "SOC analysts use playbooks to:",
+      "choices": [
+        "Standardize triage and response steps for common alert types",
+        "Replace incident tracking systems",
+        "Guarantee zero false positives",
+        "Eliminate the need for threat intelligence"
+      ],
+      "correct": 0,
+      "explain": "Playbooks and runbooks improve consistency and speed during incidents."
+    },
+    {
+      "q": "Least functionality on servers means:",
+      "choices": [
+        "Disable unnecessary services and accounts to reduce attack surface",
+        "Install every optional package for flexibility",
+        "Run as many listeners on port 0 as possible",
+        "Give all services root privileges"
+      ],
+      "correct": 0,
+      "explain": "Hardening aligns with minimal exposure; regular reviews catch drift."
+    },
+    {
+      "q": "A hot site for DR is:",
+      "choices": [
+        "Fully equipped and ready for quick failover (highest cost, shortest RTO among sites)",
+        "Tape storage only with no hardware",
+        "An office with no network connectivity",
+        "The same as cold site"
+      ],
+      "correct": 0,
+      "explain": "Warm/cold vary in readiness vs cost; cloud DR options blur lines but concepts remain."
+    },
+    {
+      "q": "EDR solutions focus on:",
+      "choices": [
+        "Endpoint behavior, telemetry, and response actions on hosts",
+        "Replacing identity governance",
+        "Database normalization",
+        "Printer toner levels"
+      ],
+      "correct": 0,
+      "explain": "EDR/XDR extends AV with behavioral analytics and investigation tooling."
+    },
+    {
+      "q": "Log integrity protection (e.g., WORM, signing, central immutable store) supports:",
+      "choices": [
+        "Detection of tampering and forensic value",
+        "Faster CPU clock speeds",
+        "Guaranteed application uptime",
+        "Eliminating need for backups"
+      ],
+      "correct": 0,
+      "explain": "Attackers target logs; protect collector, storage, and time sync (NTP)."
+    }
+  ],
+  "d8": [
+    {
+      "q": "In the SDLC, security activities should be:",
+      "choices": [
+        "Integrated throughout requirements, design, implementation, test, and maintenance",
+        "Only performed in production after launch",
+        "Only a penetration test at the end",
+        "Ignored if agile methodology is used"
+      ],
+      "correct": 0,
+      "explain": "Shift-left: threat modeling, secure coding, reviews, and testing early and often."
+    },
+    {
+      "q": "OWASP Top 10 primarily lists:",
+      "choices": [
+        "Common web application security risks (e.g., injection, broken access control)",
+        "Network firewall vendors",
+        "CISSP domain weights",
+        "Programming language popularity"
+      ],
+      "correct": 0,
+      "explain": "OWASP guides prioritize web app risks; ASVS and SAMM help maturity."
+    },
+    {
+      "q": "Input validation and parameterized queries primarily mitigate:",
+      "choices": [
+        "Injection attacks such as SQL injection",
+        "Physical tailgating",
+        "Power outages",
+        "BGP hijacking"
+      ],
+      "correct": 0,
+      "explain": "Never trust user input; bind parameters; encode output contextually."
+    },
+    {
+      "q": "Static analysis in the pipeline can fail a build when:",
+      "choices": [
+        "Policy thresholds for critical issues are exceeded (policy as code)",
+        "The application is too popular",
+        "Users request new features",
+        "The database is normalized"
+      ],
+      "correct": 0,
+      "explain": "CI gates enforce quality/security bars; tune to reduce false positives."
+    },
+    {
+      "q": "The principle of secure failure means:",
+      "choices": [
+        "On error, systems fail to a safe state (deny access, maintain confidentiality)",
+        "Systems crash without logging",
+        "Default to admin access on error",
+        "Always reveal stack traces to users"
+      ],
+      "correct": 0,
+      "explain": "Fail secure/closed vs fail open—choose based on risk (often fail closed for authz)."
+    },
+    {
+      "q": "Third-party libraries should be:",
+      "choices": [
+        "Tracked, scanned for vulnerabilities, and updated with change control",
+        "Copied randomly from forums",
+        "Never updated to avoid churn",
+        "Used without license review"
+      ],
+      "correct": 0,
+      "explain": "SBOM, dependency scanning, and vendor SLAs reduce supply chain risk."
+    },
+    {
+      "q": "Which practice reduces XSS risk?",
+      "choices": [
+        "Context-aware output encoding and CSP headers",
+        "Disabling HTTPS",
+        "Storing HTML in query strings only",
+        "Using eval() for all user input"
+      ],
+      "correct": 0,
+      "explain": "XSS defenses: encode, sanitize where appropriate, CSP, HttpOnly cookies for session tokens."
+    },
+    {
+      "q": "Threat modeling (e.g., STRIDE) helps teams:",
+      "choices": [
+        "Identify threats and mitigations early in design",
+        "Replace penetration testing entirely",
+        "Guarantee formal verification of all code",
+        "Eliminate the need for requirements"
+      ],
+      "correct": 0,
+      "explain": "STRIDE categorizes spoofing, tampering, repudiation, information disclosure, DoS, elevation of privilege."
+    },
+    {
+      "q": "Memory-safe language choices and bounds checking help mitigate:",
+      "choices": [
+        "Buffer overflows and certain memory corruption classes",
+        "Phishing email volume",
+        "Misconfigured DNSSEC",
+        "Expired ID badges"
+      ],
+      "correct": 0,
+      "explain": "Unsafe C/C++ patterns need careful review; modern mitigations include ASLR, stack canaries, etc."
+    },
+    {
+      "q": "Secrets in code repositories should be:",
+      "choices": [
+        "Removed and rotated; use secret managers and never commit plaintext secrets",
+        "Stored in comments for documentation",
+        "Shared in public README files",
+        "Encrypted with reversible XOR only"
+      ],
+      "correct": 0,
+      "explain": "Git history retains leaks; scan repos, rotate credentials, use vaults and ephemeral creds."
+    }
+  ]
+}

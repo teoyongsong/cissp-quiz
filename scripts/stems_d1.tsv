@@ -1,0 +1,105 @@
+Recovery Point Objective (RPO) primarily expresses:	The maximum tolerable data loss measured in time	RPO defines how much data the organization can afford to lose; it drives backup frequency.
+Recovery Time Objective (RTO) primarily expresses:	The maximum acceptable time to restore a process after disruption	RTO is about time to resume service, not amount of data loss.
+Maximum Tolerable Downtime (MTD) represents:	The longest outage duration the organization can absorb without unacceptable harm	MTD caps acceptable outage length; RTO should be less than or equal to MTD.
+A Business Impact Analysis (BIA) is used to:	Identify critical processes, impacts of disruption, and continuity priorities	BIA informs RTO/RPO and recovery strategies.
+Risk appetite is best described as:	The amount and type of risk the organization is willing to pursue or retain	Appetite is strategic; tolerance is often operational thresholds within appetite.
+Risk avoidance means:	Eliminating the risk source or not engaging in the risky activity	Avoidance removes exposure (e.g., not storing certain data).
+Transferring risk to an insurer is an example of:	Risk transference	Transfer shifts financial impact; residual operational risk may remain.
+Accepting risk typically requires:	Documented sign-off when treatment cost exceeds benefit or risk is within appetite	Acceptance is conscious, not silent neglect.
+A Key Risk Indicator (KRI) is used to:	Provide early signal that risk may be approaching unacceptable levels	KRIs differ from KPIs: KRIs focus on risk exposure trends.
+The primary purpose of a risk register is to:	Record identified risks, assessments, owners, and treatment status	Registers enable tracking; they do not eliminate uncertainty.
+A security policy differs from a procedure in that a policy:	States management intent and requirements at a high level	Procedures are step-by-step; policies set direction.
+Standards in security documentation typically:	Define mandatory controls or requirements that must be met	Standards are more specific than policies; baselines often implement standards.
+Guidelines are best characterized as:	Recommended practices that allow flexibility where strict rules are impractical	Guidelines are advisory; policies/standards can be mandatory.
+Separation of duties helps prevent fraud because:	No single person can complete and conceal a sensitive transaction alone	SoD pairs with least privilege and monitoring.
+Mandatory vacation can detect wrongdoing because:	It forces coverage and review of another employee’s work	It is a detective compensating control in some environments.
+Job rotation primarily supports:	Reducing collusion risk and cross-training while exposing irregularities	Rotation complements SoD and succession planning.
+Due diligence in vendor selection typically includes:	Assessing security, financial stability, and compliance before contracting	Due diligence is investigation before commitment; due care is ongoing reasonableness.
+A right-to-audit clause in a contract allows:	The customer to assess the vendor’s controls relevant to the service	Supports supply chain assurance; scope and frequency are negotiated.
+Shared responsibility in cloud means:	The provider and customer each own specific security obligations	Customers retain duties like identity, data, and configuration.
+A Business Continuity Plan (BCP) focuses on:	Maintaining or restoring business operations across many scenarios	DRP is often a subset focused on IT recovery; BCP is broader.
+A Disaster Recovery Plan (DRP) most directly addresses:	Restoring IT systems and infrastructure after a major disruption	DRP supports RTO/RPO for technology services.
+Crisis management differs from routine IR in that it:	Coordinates executive communications, stakeholders, and reputation during major events	Crisis comms align with legal/PR; technical IR handles containment.
+Legal hold on records:	Suspends normal deletion when litigation or investigation is reasonably anticipated	Hold overrides retention schedules until released by legal.
+Chain of custody for evidence requires:	Documented handling to preserve admissibility and integrity	Breaks in chain weaken forensic/legal use.
+Fair information practice principles emphasize:	Collection limitation, purpose specification, and use limitation	Privacy frameworks align with transparency and accountability.
+Data minimization in privacy means:	Collecting only what is necessary for the stated purpose	Reduces exposure and supports GDPR-style principles.
+The purpose limitation principle requires:	Using personal data only for purposes disclosed at collection (unless permitted)	Supports lawful processing and user expectations.
+Accountability in privacy programs means:	Demonstrating compliance through policies, records, and governance	Accountability needs evidence—not just intent.
+A steering committee for security often:	Aligns security initiatives with business priorities and resources	Governance forums approve strategy and major exceptions.
+The CISO typically should report to:	Leadership with authority and visibility (often CEO or board committee), not only IT	Independence reduces conflicts; reporting lines vary by org.
+COSO is commonly associated with:	Internal control frameworks for governance and risk oversight	COSO supports Sarbanes-Oxley control environments in many firms.
+COBIT helps organizations:	Govern and manage IT to deliver value while managing risk	COBIT maps goals, processes, and controls for IT governance.
+ISO/IEC 27001 specifies requirements for:	An information security management system (ISMS)	Certification is against 27001; 27002 provides control guidance.
+The NIST Cybersecurity Framework Core includes:	Functions such as Identify, Protect, Detect, Respond, Recover	The CSF is voluntary guidance widely adopted for program structure.
+PCI DSS applies to organizations that:	Store, process, or transmit cardholder data	Scope reduction and segmentation are key compliance strategies.
+HIPAA Security Rule requirements apply to:	Covered entities and business associates handling electronic PHI	BA agreements define subprocessors and safeguards.
+GDPR lawful bases for processing include:	Consent, contract, legal obligation, vital interests, public task, and legitimate interests (where applicable)	Controllers must document basis and inform data subjects.
+SOX IT controls are relevant because:	They support reliability of financial reporting and IT general controls	SOX focuses on financial statement integrity.
+Export controls and sanctions programs require:	Screening transactions and technology transfers against restricted parties and destinations	Violations can be criminal; compliance programs mitigate.
+Intellectual property protection in security governance includes:	Access controls, NDAs, and classification to reduce theft and misuse	Legal + technical controls together.
+Enterprise Risk Management (ERM) aims to:	View risk holistically across the organization rather than in silos	ERM supports portfolio thinking and capital allocation.
+A compensating control is used when:	Primary controls cannot be implemented but equivalent mitigation exists	Common in PCI when exact controls are infeasible.
+Residual risk should be:	Explicitly accepted or treated after controls—with ownership	Unowned residual risk is a governance failure.
+Inherent risk is:	Risk before considering controls	Compare to residual after controls.
+Qualitative risk ratings often use:	Ordinal scales (e.g., high/medium/low) with expert input	Faster than full quantitative models for prioritization.
+Quantitative risk analysis may use:	ALE estimates and simulation to express risk in monetary terms	Requires credible data; not always available.
+Monte Carlo simulation in risk analysis:	Models many scenarios using probability distributions	Useful for aggregate loss and uncertainty ranges.
+Sensitivity analysis helps:	See which inputs most affect outcomes	Supports prioritizing data collection and control investment.
+Cost-benefit analysis for controls compares:	Reduction in risk or loss against implementation and operating cost	Supports proportionality.
+A third-party risk program should scale assessment to:	The sensitivity of data and criticality of the service	Not all vendors need the same depth.
+Subprocessor changes by a cloud vendor should trigger:	Contractual notification and customer review where required	GDPR and enterprise contracts often address subprocessors.
+Data residency requirements may force:	Storing or processing data in specific jurisdictions	Affects architecture and vendor selection.
+An ethics program for security professionals should include:	Reporting channels, conflicts of interest rules, and enforcement	Aligns with codes of conduct and regulatory expectations.
+Whistleblower protections support:	Reporting wrongdoing without retaliation where laws apply	Encourages disclosure of policy violations.
+Security awareness should be:	Ongoing, role-based, and measured for effectiveness	One-time training is insufficient for changing behavior.
+Tabletop exercises for continuity:	Walk through scenarios to find gaps in plans and roles	Low-cost way to improve BCP/DRP.
+Succession planning affects security because:	Critical security roles need backup knowledge and authority	Prevents single points of failure in governance.
+Procurement security requirements should:	Flow into RFPs, contracts, and acceptance testing	Shifts left vendor risk management.
+A security exception (risk acceptance) process should:	Document business justification, compensating controls, and expiry	Exceptions must not be permanent by default.
+Continuous monitoring in risk management means:	Ongoing assessment of risk and control effectiveness—not only annual reviews	Feeds timely updates to the risk register.
+Threat intelligence consumed by leadership should be:	Relevant, actionable, and tied to enterprise risks	Avoid raw feeds without prioritization.
+Business continuity testing types include:	Checklist, walkthrough, simulation, and full interruption tests	Full tests are costly; progressive rigor is common.
+Alternate work sites support:	Relocating staff when primary facilities are unavailable	Ties to workspace recovery and pandemic planning.
+Telework policies affect risk by:	Expanding attack surface and data dispersion	Requires endpoint, identity, and data policies.
+Insurance does not eliminate the need for:	Preventive and detective controls and incident readiness	Carriers require reasonable security; claims may be denied otherwise.
+Regulatory mapping aligns:	Controls to multiple frameworks to reduce duplicate work	Common for global organizations with overlapping obligations.
+Board-level cybersecurity metrics should be:	Concise, trended, and tied to material risks	Avoid purely technical counts without business context.
+Security governance charters typically define:	Scope, authority, and decision rights for security bodies	Clarifies roles versus IT and business units.
+Integration of security into SDLC governance means:	Security gates and reviews at project milestones	Shifts security left in change and development.
+Physical security governance ties to:	Protecting facilities that host critical assets and people safety	Converged risk includes safety and security.
+Record retention balances:	Legal/regulatory needs against storage cost and privacy minimization	Over-retention increases breach impact.
+Privacy by design suggests:	Embedding privacy into systems and processes from the start	Proactive vs bolt-on privacy.
+Transparency in privacy notices should:	Explain what is collected, why, and with whom it is shared	Supports informed consent where required.
+Accuracy of personal data requires:	Reasonable steps to keep data correct and allow correction	Principle in many privacy laws.
+Security metrics for third-party dashboards may include:	Remediation SLAs, audit results, and incident history	Supports ongoing monitoring, not only onboarding.
+Harmonizing policies across regions requires:	Understanding highest common requirements and local variations	Avoids conflicting employee guidance.
+Risk-based auditing prioritizes:	Areas of higher materiality, change, and past issues	Not all controls annually to the same depth.
+An audit finding’s management response should:	Include corrective actions, owners, and dates	Closure requires evidence of effectiveness.
+Continuous improvement in security management uses:	Lessons learned from incidents, audits, and metrics	Feeds next cycle of policy and architecture updates.
+Strategic alignment of security means:	Security initiatives support business outcomes and risk appetite	Security is not only a cost center checklist.
+COSO’s internal control framework is often used to:	Structure governance, risk management, and control activities for assurance	Commonly referenced alongside financial and IT controls.
+IT governance ensures that:	IT investments and risks align with enterprise goals and deliver value	Aligns with COBIT-style outcomes.
+A balanced scorecard for security might include:	Financial, customer, process, and learning metrics tied to risk reduction	Balances lagging and leading indicators.
+Outsourcing governance should address:	Subprocessor oversight, data flows, and exit/termination rights	Shared responsibility must be contractually clear.
+Cloud governance bodies often define:	Standards for approved services, regions, and identity patterns	Reduces shadow IT and misconfiguration.
+Third-party risk tiers help:	Scale due diligence depth to vendor criticality and data sensitivity	Not every vendor needs the same assessment cadence.
+Security performance measurement should:	Link controls to outcomes and material risks, not only activity counts	Avoid vanity metrics without business context.
+A security steering committee typically:	Approves major initiatives, exceptions, and resource trade-offs	Executive sponsorship improves outcomes.
+Policy exceptions should record:	Business justification, compensating controls, owner, and expiry	Exceptions are risks taken consciously.
+Risk communication to stakeholders should:	Be tailored to audience, decision relevance, and timing	Supports informed risk-taking.
+Enterprise threat management connects:	Intelligence on adversaries to prioritized controls and monitoring	Closes the loop from insight to action.
+A vulnerability management program at the governance level defines:	SLAs, roles, and escalation for remediation across the enterprise	Not only scanning technology.
+Leading indicators for security might include:	Patching cadence, training completion, and phishing simulation trends	Lagging indicators include incidents and audit findings.
+A business case for security spending should:	Tie proposed controls to risk reduction, compliance, or revenue protection	Helps prioritize competing projects.
+Estimated cost of downtime is used in:	BIA and ROI discussions to justify continuity investments	Quantitative when credible data exists.
+Organizational single points of failure in security include:	One approver for all access or one person holding critical tribal knowledge	Succession and SoD reduce this.
+During divestitures, security governance must address:	Data separation, identity cutovers, and retained liabilities	Often under tight timelines.
+M&A security due diligence evaluates:	Target company controls, incidents, and integration risks	Can affect valuation and deal terms.
+A strong security culture is reinforced by:	Leadership messaging, accountability, and incentives aligned to secure behavior	Culture complements technical controls.
+Ethics training for employees commonly covers:	Conflicts of interest, acceptable use, and reporting channels	Reduces misconduct and compliance failures.
+A conflict-of-interest policy helps:	Identify situations where personal interests could bias security or procurement decisions	Disclosure processes matter.
+Cross-border data transfer governance must consider:	Legal mechanisms (e.g., SCCs), residency rules, and regulator expectations	Map before architecture decisions.
+Sector-specific regulations (e.g., finance, health) often:	Impose additional controls beyond general privacy/security baselines	Understand your industry overlays.
+Security champions programs at the governance level:	Scale policy awareness and feedback loops into business units	Bridge central security and teams.
+Board reporting on cyber should emphasize:	Material risks, trends, incidents of note, and funding needs	Concise and decision-oriented.

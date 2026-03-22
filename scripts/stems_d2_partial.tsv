@@ -1,0 +1,66 @@
+Data classification primarily enables:	Consistent handling requirements proportional to sensitivity	Classification drives labeling, access, and storage rules.
+Data in use refers to:	Information actively processed in memory or CPUs	Different controls than at rest or in transit.
+Data in transit should be protected with:	Confidentiality and integrity controls such as TLS or IPsec as appropriate	Encryption and authentication reduce interception and tampering.
+Tokenization reduces risk by:	Replacing sensitive values with non-sensitive surrogates in systems	Limits exposure of PAN/PII in databases and logs.
+Masking for non-production environments helps:	Limit exposure of sensitive data to developers and testers	Synthetic or masked data supports testing safely.
+Secure disposal of paper records may require:	Cross-cut shredding or destruction services for confidential material	Dumpster diving is a real threat.
+Cryptographic erasure can be appropriate when:	The entire media is encrypted and the keys are destroyed	Fast for SSDs; verify vendor implementation.
+Physical media containing secrets should be:	Tracked through its lifecycle including transport and destruction	Chain of custody applies beyond digital evidence.
+Database labeling (row/column) supports:	Fine-grained access and enforcement in applications	Complements network-level controls.
+Metadata can increase risk because:	It may reveal sensitive context even when payload is protected	Scrub metadata before sharing files externally.
+Data stewardship typically involves:	Accountability for data quality, definitions, and policy adherence	Stewards partner with owners and custodians.
+The data owner is generally responsible for:	Classification and access approvals for their business data	Custodians implement; owners decide.
+A data custodian (admin) primarily:	Implements controls and handles storage per owner direction	Separation between owner and admin reduces abuse.
+Privacy notice should reflect:	Actual practices for collection, use, sharing, and retention	Misrepresentation creates legal and trust issues.
+Consent under privacy law often must be:	Freely given, specific, informed, and unambiguous where required	Pre-ticked boxes may fail consent rules.
+Purpose binding means:	Using data only for purposes communicated or permitted	Secondary use may need new basis or consent.
+Profiling and automated decisions may require:	Additional safeguards, explanation, and human review under some laws	GDPR Articles 22 and similar concepts.
+Cross-border data transfers often require:	Mechanisms such as SCCs, adequacy decisions, or binding corporate rules	Map legal transfer tools before architecture.
+Anonymization that is irreversible:	Removes personal identifiers such that re-identification is not reasonably possible	Pseudonymization is weaker; still may be personal data.
+Pseudonymization:	Replaces identifiers but allows re-linking with additional information held separately	Reduces risk but is not anonymity.
+DLP discovery phase:	Finds where sensitive data lives across repositories and endpoints	You cannot enforce policy without knowing locations.
+Endpoint DLP can:	Monitor and block actions like copy to USB based on policy	User education complements technical controls.
+Network DLP inspects:	Traffic patterns and content with policy to block exfiltration	TLS inspection has privacy and legal implications.
+Cloud access security broker (CASB) use cases include:	Visibility and policy enforcement for SaaS usage	Addresses shadow IT and misconfigurations.
+Encryption at rest for laptops often uses:	Full-disk encryption with a key protected by user credential or TPM	Protects against device theft.
+Key management is critical because:	Compromised keys defeat confidentiality of all data protected by those keys	HSMs and rotation policies matter.
+Separation of environments (prod/test) protects:	Production data from accidental leakage during testing	Test data should not be live customer data without controls.
+Database activity monitoring helps:	Detect unauthorized access and privileged abuse	Complements logging and SIEM.
+File integrity monitoring on critical servers:	Detects unauthorized changes to binaries and configs	Useful for compliance and malware persistence.
+Backup encryption protects:	Confidentiality of data on backup media	Keys must be managed separately from media.
+Offsite backups address:	Loss of primary site due to disaster	Follow 3-2-1 and test restores.
+Immutability for backups helps against:	Ransomware that targets backup deletion	WORM/immutable object storage patterns.
+Retention for litigation hold:	Overrides normal destruction schedules until released	Must be integrated with legal workflow.
+Data quality programs support security by:	Reducing errors that cause mis-delivery or wrong access decisions	Bad data breaks ABAC and reporting.
+Inventory of data stores should include:	Cloud buckets, databases, file shares, and SaaS	Shadow data is a common gap.
+Sensitive data in logs should be:	Masked, tokenized, or excluded to reduce exposure	Logs are a frequent breach source.
+Secure erasure verification may require:	Sampling or attestation after large-scale sanitization	Especially in decommissioning data centers.
+Asset labeling of removable media:	Helps track classification and return during transit	Human errors cause many media losses.
+Print security reduces risk by:	Pull printing, classification watermarks, and secure disposal	Paper exits the digital DLP boundary.
+Email DLP can prevent:	Sending SSN or PCI data to external addresses	Policy needs tuning to reduce false positives.
+Collaboration tools risk includes:	Over-sharing and guest links that bypass normal access controls	Governance and expiration on links help.
+Version control for documents:	Reduces use of stale sensitive copies	Retention applies to all copies.
+Data loss from misconfigured S3 buckets is mitigated by:	Bucket policies, encryption defaults, and public access blocks	Cloud misconfiguration is a top cause of leaks.
+Privacy engineering includes:	PETs, minimization, and secure defaults in product design	Shift-left privacy like security.
+Biometric data often qualifies as:	Sensitive personal data requiring heightened protections in many jurisdictions	Consent and purpose limits are stricter.
+Children’s data online often requires:	Parental consent and stricter collection limits	COPPA and similar laws.
+Employee monitoring must balance:	Legitimate business interests against privacy and labor laws	Transparency and proportionality.
+BYOD increases risk because:	Personal devices mix corporate data with untrusted apps	MDM/MAM policies address containment.
+Data-centric security focuses on:	Protecting the data itself as it moves across systems	Complements perimeter-centric models.
+Secure sharing with partners uses:	Contracts, encryption, and least-privilege access	API keys and shared accounts are weak patterns.
+Right to erasure may conflict with:	Legal retention requirements; requires policy precedence rules	Not all data can be deleted on request.
+Data portability requests require:	Providing structured, machine-readable exports where applicable	Security of export channel matters.
+Breach notification timelines:	Are often regulated (e.g., 72 hours to authority under GDPR in some cases)	Runbooks should define evidence collection first.
+Supply chain for data processing:	Includes subprocessors and fourth parties—map them	Concentration risk in one vendor.
+Physical security for media storage:	Controlled access rooms and intrusion detection for tape libraries	Insider theft is a concern.
+Sanitization levels per NIST SP 800-88 include:	Clear, purge, and destroy depending on confidentiality needs	Destroy is strongest for high sensitivity.
+Cloud shared responsibility for customer data:	Customer classifies and controls access; provider secures platform per contract	Read the matrix for each service model.
+Test data generation should prefer:	Synthetic data over production copies when feasible	Reduces accidental production exposure.
+Archival versus active storage policies differ in:	Access latency, cost, and retrieval procedures	Legal holds may span both.
+Data mapping (ROPA) supports:	Records of processing activities required by GDPR-style accountability	Shows flows, purposes, and transfers.
+Privacy threshold analysis determines:	Whether a PIA/DPIA is required before a project proceeds	Early gate in privacy-by-design.
+Secure deletion on SSDs may require:	Vendor-specific erase commands or physical destruction when purge is insufficient	TRIM and wear leveling complicate deletion.
+Information lifecycle ends with:	Secure destruction or archival per policy when no longer needed	Minimizes unnecessary retention risk.
+Aggregation of data can increase risk because:	Combined datasets may re-identify individuals	K-anonymity concepts apply in analytics.
+Secure fax and scan workflows should:	Route to authorized recipients and avoid public folders	Legacy channels still leak.
+Watermarking classified documents:	Deters leaks and aids tracing	Not a substitute for access controls.

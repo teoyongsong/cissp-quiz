@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CISSP Domain Quizzes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>CISSP practice — eight domains</h1>
+        <p class="tagline">
+          Question banks follow official 2024 domain weights; pick a domain, set length, and practice with CAT-scaled timing.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="view-landing" aria-labelledby="landing-heading">
+        <h2 id="landing-heading" class="sr-only">Select a domain or full exam</h2>
+        <div class="full-exam-banner">
+          <div class="full-exam-copy">
+            <h3 class="full-exam-title">Full practice exam</h3>
+            <p class="full-exam-desc">
+              All domains in one session — 150-question CAT-length sample from the combined bank, shuffled each run.
+            </p>
+          </div>
+          <button type="button" class="btn btn-primary" id="btn-open-full-setup">Full exam</button>
+        </div>
+        <div id="domain-grid" class="domain-grid"></div>
+      </section>
+
+      <section id="view-full-setup" hidden aria-labelledby="full-setup-heading">
+        <div class="setup-card setup-card-wide">
+          <h2 id="full-setup-heading" class="setup-title">Full practice exam</h2>
+          <p class="setup-bank" id="full-setup-summary"></p>
+          <p class="setup-timer-preview" id="full-setup-timer"></p>
+          <p class="setup-ref">
+            Timer uses the same CISSP CAT scale: <strong>3 hours</strong> for <strong>150</strong> items (~72 seconds per question), applied to your run length.
+          </p>
+          <div class="actions setup-actions">
+            <button type="button" class="btn btn-primary" id="btn-full-start">Start exam</button>
+            <button type="button" class="btn btn-ghost" id="btn-full-setup-back">Back</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-setup" hidden aria-labelledby="setup-heading">
+        <div class="setup-card">
+          <p class="setup-num" id="setup-domain-num"></p>
+          <h2 id="setup-heading" class="setup-title"></h2>
+          <p class="setup-bank" id="setup-bank-size"></p>
+          <p class="setup-label">Number of questions</p>
+          <div id="setup-count-options" class="count-pills" role="group" aria-label="Question count"></div>
+          <p class="setup-timer-preview" id="setup-timer-preview"></p>
+          <p class="setup-ref">
+            Timer uses the English CISSP CAT reference: <strong>3 hours</strong> for up to
+            <strong>150</strong> items — about <strong>1.2 minutes</strong> per question, scaled to your
+            run length.
+          </p>
+          <div class="actions setup-actions">
+            <button type="button" class="btn btn-primary" id="btn-setup-start">Start quiz</button>
+            <button type="button" class="btn btn-ghost" id="btn-setup-back">All domains</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-quiz" hidden aria-live="polite">
+        <div class="quiz-meta">
+          <div class="quiz-meta-main">
+            <p id="quiz-domain-label" style="margin: 0 0 0.25rem; color: var(--accent); font-size: 0.9rem"></p>
+            <div class="progress-wrap">
+              <label id="progress-text" for="progress-bar">Progress</label>
+              <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="10">
+                <span id="progress-fill" style="width: 0%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-timer-wrap">
+            <span class="quiz-timer-label">Time left</span>
+            <div id="quiz-timer" class="quiz-timer" role="timer" aria-live="off" aria-atomic="true">—</div>
+          </div>
+        </div>
+        <div class="question-block">
+          <h2 id="question-text"></h2>
+          <div id="choices" class="choices"></div>
+          <div id="feedback-block" class="feedback" hidden>
+            <h3>Explanation</h3>
+            <p id="feedback-text"></p>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn btn-primary" id="btn-next" hidden>Next question</button>
+            <button type="button" class="btn btn-ghost" id="btn-back-domains">All domains</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-results" hidden aria-labelledby="results-heading">
+        <div class="results-card">
+          <h2 id="results-heading" style="margin: 0; font-size: 1.1rem">Quiz complete</h2>
+          <p id="results-domain" style="margin: 0.75rem 0 0; color: var(--muted); font-size: 0.95rem"></p>
+          <p class="score" id="results-score"></p>
+          <p class="sub" id="results-pct"></p>
+          <div id="results-domain-breakdown" class="results-breakdown" hidden></div>
+          <p class="sub results-note" id="results-note" hidden></p>
+          <div class="actions" style="justify-content: center">
+            <button type="button" class="btn btn-primary" id="btn-retake">Retake this domain</button>
+            <button type="button" class="btn btn-ghost" id="btn-back-domains-2">All domains</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
